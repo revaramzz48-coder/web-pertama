@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTOFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -23,9 +25,15 @@
         <section id="home" class="full-screen-section home-section">
             <div class="home-content">
                 <div class="profil-image-container">
-                    <img src="" alt="SEPTIAWAN RAMADHAN">
+                    <div class="circle-decor top-left"></div>
+                    <div class="circle-decor top-right"></div>
+                    <div class="img-wrapper">
+                        <img src="septiawan.jpeg" alt="SEPTIAWAN RAMADHAN">
+                    </div>
                 </div>
                 <div class="text-content">
+                    <span class="badge-about">About Me</span>
+                    <h1 class="intro-name"></h1>
                     <p class="full-name">SEPTIAWAN RAMADHAN WAHYU ZAMHURI</p>
                     <h1 class="intro-name">SEORANG WEB DEVELOPER AMINN</h1>
                 </div>
@@ -33,17 +41,81 @@
         </section>
 
         <section id="about" class="full-screen-section about-section">
-            <h2 class="section-title">MY...</h2>
+            <h2 class="about-me">About Me</h2>
+            <h2 class="section-title">My Experience</h2>
             <div class="skill-list">
-                <h3>Aku Bisa:</h3>
                 <ul>
-                    <li><i class="fab fa-python"></i>Tahap Belajar</li>
-                    <li><i class="fab fa-figma"></i>UI Desain</li>
-                    <li><i class="fas fa-code"></i>VS Code untuk Editor</li>
-                    <li><i class="fab fa-html5"></i>Awal</li>
-                    <li><i class="fab fa-css3-alt"></i>Design Web</li>
-                    <li><i class="fab fa-js"></i>Tahap Belajar</li>
-                    <li><i class="fab fa-flutter"></i>Mobile App</li>
+                    <li>
+                        <i class="fab fa-python icon-python"></i>
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-desc">Tahap Belajar</span>
+                        </div>
+                        <div class="bar-container"><div class="bar bar-python"></div></div>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-html5 icon-html5"></i>
+                        <div class="skill-info">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-desc">Awal</span>
+                        </div>
+                        <div class="bar-container"><div class="bar bar-html5"></div></div>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-css3-alt icon-css3-alt"></i>
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-desc">Design</span>
+                        </div>
+                        <div class="bar-container"><div class="bar bar-css3-alt"></div></div>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-js icon-js"></i>
+                        <div class="skill-info">
+                            <span class="skill-name">Java Script</span>
+                            <span class="skill-desc">Tahap Belajar</span>
+                        </div>
+                        <div class="bar-container"><div class="bar bar-js"></div></div>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-figma icon-Figma"></i>
+                        <div class="skill-info">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-desc">Tahap Belajar</span>
+                        </div>
+                        <div class="bar-container"><div class="bar bar-figma"></div></div>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-code icon-flutter"></i>
+                        <div class="skill-info">
+                            <span class="skill-name">Flutter</span>
+                            <span class="skill-desc">Tahap Belajar</span>
+                        </div>
+                        <div class="bar-container"><div class="bar bar-flutter"></div></div>
+                    </li>
+
+                    <li>
+                        <i class="fab fa-youtube icon-youtube"></i>
+                        <div class="skill-info">
+                            <span class="skill-name">Youtube</span>
+                            <span class="skill-desc">Materi</span>
+                        </div>
+                        <div class="bar-container"><div class="bar bar-youtube"></div></div>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-code icon-code"></i>
+                        <div class="skill-info">
+                            <span class="skill-name">VS CODE</span>
+                            <span class="skill-desc">Editor</span>
+                        </div>
+                        <div class="bar-container"><div class="bar bar-code"></div></div>
+                    </li>
 
                 </ul>
 
@@ -93,8 +165,10 @@
                     <li><i class="fab fa-figma"></i>UI/UX Developer</li>
                 </ul>
                 <div class="text-content">
-                    <h3 class="jasa-web">Gunakan Jasa IT saya!</h3>
-                    <button class="hire-button">HIRE ME</button>
+                    <p class="jasa-web">Gunakan Jasa IT saya!</p>
+                    <a href="https://wa.me/6281337967025" target="_blank">
+                        <button class="hire-button">HIRE ME</button>
+                    </a>
                 </div>
                 
             </div>
@@ -122,6 +196,15 @@
                     <a href="https://discordapp.com/users/1420747461890150461">
                         <i class="fab fa-discord"></i>
                         <span>veraaknjt</span>
+                    </a>
+
+                </p>
+
+                <p class="contact-item">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                        <span>Revaramzz</span>
+
                     </a>
 
                 </p>
