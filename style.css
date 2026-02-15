@@ -52,20 +52,36 @@ body {
 
 .home-section {
     background-color: var(--bg-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    padding-left: 10%;
     min-height: 100vh;
-    padding: 40px;
+    padding: 40px 100px;
     color: white;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
 .home-content {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-    max-width: 1200px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    gap: 50px;
+    width: 100% !important;
+    text-align: left;
+}
+
+.home-section .intro-name,
+.home-section .description,
+.home-section .badge-about,
+.home-section .info-grid {
+    margin-left: 0 !important;
+    text-align: left !important;
+    display: block !important;
 }
 
 .profile-image-container {
@@ -119,21 +135,25 @@ body {
     border-radius: 20px;
     font-size: 15px;
     color: var(--accent-color);
-    display: inline-block;
+    display: inline-block !important;
     margin-bottom: 20px;
     background-color: var(--purple-color);
+    margin-left: 0 !important;
+    align-self: flex-start;
+    width: fit-content !important;
+    text-align: left !important;
 }
 
 .intro-name {
     line-height: 1.2;
     font-size: 2.2em;
     font-weight: 800;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
 }
 
 .description {
     color: var(--text-gray);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     line-height: 1.6;
 }
 
@@ -143,17 +163,28 @@ body {
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 30px;
+    justify-items: start !important;
 }
 
 .info-item .label {
     color: var(--purple);
     font-size: 14px;
     margin-bottom: 2px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .info-item .value {
     font-weight: 500;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cation-button {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .btn-contact {
@@ -163,8 +194,12 @@ body {
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
+    display: inline-block !important;
     transition: transform 0.3s;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1px;
+    margin-left: 0 !important;
 }
 
 .btn-contact :hover {
@@ -173,18 +208,31 @@ body {
 
 .about-section {
     color: white;
-    padding: 60px 20px;
+    padding: 60px 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section .section-title {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
 }
 
 .about-me { 
     color: white; 
-    font-size: 1.2rem; 
+    font-size: 2rem; 
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
 }
 
 .section-title {
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .skill-list ul {
@@ -265,16 +313,15 @@ body {
 }
 
 .hobby-section .section-title {
-    font: 4em;
-    margin-bottom: 50px;
+    font-size: 4em;
+    margin-bottom: 80px;
 }
 
 .hobby-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-    gap: 40px 60px;
-    max-width: 1008px;
+    gap:40px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -292,13 +339,13 @@ body {
     object-fit: cover;
     border-radius: 15px;
     border: 5px solid var(--purple-color);
+    flex-shrink: 0;
 }
 
 .hobby-text {
     font-size: 1.8em;
     font-weight: 600;
     line-height: 1.1;
-    white-space: nowrap;
     text-transform: uppercase;
 
 }
@@ -308,3 +355,106 @@ body {
     color: var(--purple-color);
     display: block;
 }
+
+.service-section {
+    background: radial-gradient(circle at center, #530e94 0%, #000000 100%);
+    color: #ffffff;
+    padding: 80px 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-section .section-title {
+    text-align: center;
+    margin-left: 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 50px;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.service-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-grid li {
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 15px;    
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.service-grid li:hover i {
+    color: #a585f7;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    width: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.jasa-web {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #cbd5e1;
+}
+
+.hire-button {
+    background: #a585f7;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+    text-transform: uppercase;
+}
+
+.hire-button:hover {
+    background: #9333ea;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.6);
+}
+
+.btn-contact:hover {
+    transform: translateY(-5px);
+    background-color: #7e5bff;
+}
+
