@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+    <div id="scroll-progress"></div>
+    <nav class="floating-nav">
+        <a href="#home" title="Home"><span class="nav-dot"></span><span class="nav-label">Home</span></a>
+        <a href="#about" title="About"><span class="nav-dot"></span><span class="nav-label">About</span></a>
+        <a href="#hobby" title="Hobby"><span class="nav-dot"></span><span class="nav-label">Hobby</span></a>
+        <a href="#service" title="Service"><span class="nav-dot"></span><span class="nav-label">Service</span></a>
+        <a href="#contact" title="Contact"><span class="nav-dot"></span><span class="nav-label">Contact</span></a>
+    </nav>
     <main class="scroll-container">
         <section id="home" class="full-screen-section home-section">
-            <div class="home-content">
+            <div class="home-content" data-reveal="fade-up">
                 <div class="profil-image-container">
                     <div class="circle-decor top-left"></div>
                     <div class="circle-decor top-right"></div>
@@ -21,7 +31,8 @@
                 </div>
                 <div class="text-content">
                     <a href="#about" class="badge-about">About Me</a>
-                    <h1 class="intro-name">Bikin bisnismu makin berkelas dengan website yang nggak cuma cakep, tapi juga profesional!!</h1>
+                    <h1 class="intro-name">Bikin bisnismu makin berkelas dengan website yang nggak cuma cakep, tapi juga
+                        profesional!!</h1>
                     <p class="description">
                         Halo Saya <strong>SEPTIAWAN RAMADHAN WAHYU ZAMHURI</strong>
                         Saya adalah seorang web develepor yang fokus menciptakan pengalaman yang menarik dan fungsional
@@ -54,8 +65,8 @@
         </section>
 
         <section id="about" class="full-screen-section about-section">
-            <h2 class="about-me">ABOUT ME</h2>
-            <h2 class="section-title">My Experience</h2>
+            <h2 class="about-me" data-reveal="fade-up">ABOUT ME</h2>
+            <h2 class="section-title" data-reveal="fade-up">My Experience</h2>
             <div class="skill-list">
                 <ul>
                     <li>
@@ -64,7 +75,9 @@
                             <span class="skill-name">Python</span>
                             <span class="skill-desc">Tahap Belajar</span>
                         </div>
-                        <div class="bar-container"><div class="bar bar-python"></div></div>
+                        <div class="bar-container">
+                            <div class="bar bar-python"></div>
+                        </div>
                     </li>
 
                     <li>
@@ -73,7 +86,9 @@
                             <span class="skill-name">HTML</span>
                             <span class="skill-desc">Awal</span>
                         </div>
-                        <div class="bar-container"><div class="bar bar-html5"></div></div>
+                        <div class="bar-container">
+                            <div class="bar bar-html5"></div>
+                        </div>
                     </li>
 
                     <li>
@@ -82,7 +97,9 @@
                             <span class="skill-name">CSS</span>
                             <span class="skill-desc">Design</span>
                         </div>
-                        <div class="bar-container"><div class="bar bar-css3-alt"></div></div>
+                        <div class="bar-container">
+                            <div class="bar bar-css3-alt"></div>
+                        </div>
                     </li>
 
                     <li>
@@ -91,7 +108,9 @@
                             <span class="skill-name">Java Script</span>
                             <span class="skill-desc">Tahap Belajar</span>
                         </div>
-                        <div class="bar-container"><div class="bar bar-js"></div></div>
+                        <div class="bar-container">
+                            <div class="bar bar-js"></div>
+                        </div>
                     </li>
 
                     <li>
@@ -100,7 +119,9 @@
                             <span class="skill-name">Figma</span>
                             <span class="skill-desc">Tahap Belajar</span>
                         </div>
-                        <div class="bar-container"><div class="bar bar-figma"></div></div>
+                        <div class="bar-container">
+                            <div class="bar bar-figma"></div>
+                        </div>
                     </li>
 
                     <li>
@@ -109,7 +130,9 @@
                             <span class="skill-name">Flutter</span>
                             <span class="skill-desc">Tahap Belajar</span>
                         </div>
-                        <div class="bar-container"><div class="bar bar-flutter"></div></div>
+                        <div class="bar-container">
+                            <div class="bar bar-flutter"></div>
+                        </div>
                     </li>
 
                     <li>
@@ -118,7 +141,9 @@
                             <span class="skill-name">Youtube</span>
                             <span class="skill-desc">Materi</span>
                         </div>
-                        <div class="bar-container"><div class="bar bar-youtube"></div></div>
+                        <div class="bar-container">
+                            <div class="bar bar-youtube"></div>
+                        </div>
                     </li>
 
                     <li>
@@ -127,7 +152,9 @@
                             <span class="skill-name">VS CODE</span>
                             <span class="skill-desc">Editor</span>
                         </div>
-                        <div class="bar-container"><div class="bar bar-code"></div></div>
+                        <div class="bar-container">
+                            <div class="bar bar-code"></div>
+                        </div>
                     </li>
 
                 </ul>
@@ -137,9 +164,14 @@
         </section>
 
         <section id="hobby" class="full-screen-section hobby-section">
-            <h2 class="section-title hobby-header">My Hobby</h2>
+            <h2 class="section-title hobby-header" data-reveal="fade-up">My Hobby</h2>
             <div class="hobby-grid">
-                
+
+                <div class="shape shape-a"></div>
+                <div class="shape shape-b"></div>
+                <div class="shape shape-c"></div>
+                <div class="shape shape-d"></div>
+
                 <div class="hobby-item">
                     <img src="foto/anin.jpg" alt="Penggemar JKT48" class="hobby-image">
                     <div class="hobby-text">NGIDOL<br>JKT48</div>
@@ -156,7 +188,7 @@
                 </div>
 
                 <div class="hobby-item">
-                    <img src="foto/game.jpg" alt="Bermain Game" class="hobby-image"> 
+                    <img src="foto/game.jpg" alt="Bermain Game" class="hobby-image">
                     <div class="hobby-text">Bermain<br>Game</div>
                 </div>
 
@@ -176,7 +208,7 @@
         <section id="service" class="full-screen-section service-section">
             <div class="grid-overlay"></div>
 
-            <h2 class="section-title">MY SERVICE</h2>
+            <h2 class="section-title" data-reveal="fade-up">MY SERVICE</h2>
 
             <div class="services-container-wrapper">
                 <div class="services-cards-grid">
@@ -238,11 +270,11 @@
             <div class="shape shape-4"></div>
             <div class="shape shape-5"></div>
             <div class="shape shape-6"></div>
-            
+
             <div class="contact-container">
-                <h2 class="thanks-title">TERIMA KASIH</h2>
-                <p class="sub-thanks">LETS WORK TOGETHER!</p>
-                
+                <h2 class="thanks-title" data-reveal="fade-up">TERIMA KASIH</h2>
+                <p class="sub-thanks" data-reveal="fade-up">LETS WORK TOGETHER!</p>
+
                 <div class="contact-wrapper">
                     <div class="contact-links">
                         <a href="https://wa.me/6281337967025" target="_blank" class="contact-item">
@@ -276,7 +308,7 @@
                     </div>
 
                     <div class="contact-info">
-                        <div class="scanner-line"></div> 
+                        <div class="scanner-line"></div>
                         <div class="info-line"></div>
                         <h3 class="footer-name">SEPTIAWAN RAMADHAN</h3>
                         <p class="footer-role">
@@ -290,7 +322,8 @@
 
     </main>
 
+    <script src="script.js"></script>
 
-    
 </body>
+
 </html>
